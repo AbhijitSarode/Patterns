@@ -18,7 +18,8 @@ int main() {
     }
 */
 
-// -----Pattern 2 -----
+// ----- Pattern 2 -----
+/*
     column = row;
     for(int i = 1; i <= row; i++) {
         for(int j = 1; j <= column; j++) {
@@ -26,5 +27,30 @@ int main() {
         }
         cout << endl;
     }
+*/
+
+// ----- Pattern 3 -----
+/*
+    column = 1;
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= row; j++) {
+            cout << column << " ";
+            column++;
+        }
+        column = 1;
+    cout << endl;
+    }
+*/    
+
+// ----- Pattern 4 -----
+    column = row;
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= row; j++) {
+            cout << column << " ";
+        }
+        column--;
+        cout << endl;
+    }
+
     return 0;
 }
