@@ -31,10 +31,9 @@ int main() {
 
 // ----- Pattern 3 -----
 /*
-    column = 1;
     for(int i = 1; i <= row; i++) {
         for(int j = 1; j <= row; j++) {
-            cout << column << " ";
+            cout << j << " ";
             column++;
         }
         column = 1;
@@ -43,6 +42,7 @@ int main() {
 */    
 
 // ----- Pattern 4 -----
+/*
     column = row;
     for(int i = 1; i <= row; i++) {
         for(int j = 1; j <= row; j++) {
@@ -51,6 +51,30 @@ int main() {
         column--;
         cout << endl;
     }
+*/
+
+// ----- Pattern 5 -----
+/*
+    column = row;
+    for(int i = 1; i <= row; i++) {
+        for(int j = column; j >= 1; j-- ) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+*/
+
+// ----- Pattern 6 -----
+/*
+    int count = 1; 
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < row; j++) {
+            cout << count << " ";
+            count++;
+        }
+        cout << endl;
+    }
+*/
 
     return 0;
 }
