@@ -51,6 +51,53 @@ void printPattern3(int row, int count) {
 }
 */
 
+// ----- Pattern 4 -----
+/*
+void printPattern4(int row, int count) {
+    if(count == 0) {
+        return;
+    }
+    for(int i = row; i >= 1; i--) {
+        cout << count << " ";
+    }
+    cout << endl;
+    printPattern4(row, count-1);
+}
+*/
+
+// ----- Pattern 5 -----
+/*
+void printPattern5(int row, int count, int iteration) {
+    count = row;
+    if(iteration == 0) {
+        return;
+    }
+
+    for(int i = row; i >= 1; i--) {
+        cout << count << " ";
+        count--;
+    }
+    cout << endl;
+    printPattern5(row, --count, --iteration);
+}
+*/
+
+// ----- Pattern 6 -----
+/*
+void printPattern6(int row, int count = 1, int depth = 0) {
+    if(depth == row) {
+        return;
+    }
+
+    for(int i = 1; i <= row; i++) {
+        cout << count << " ";
+        count++;
+    }
+    cout << endl;
+    printPattern6(row, count, ++depth);
+}
+*/
+
 int main() {
 
     int row;
@@ -60,6 +107,9 @@ int main() {
     // printPattern1(row, 1);
     // printPattern2(row, 1);
     // printPattern3(row, 1);
+    // printPattern4(row, row);
+    // printPattern5(row, row, row);
+    // printPattern6(row);
 
     return 0;
 }
