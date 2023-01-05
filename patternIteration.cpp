@@ -110,6 +110,42 @@ int main() {
     }
 */
 
+// ----- Pattern 10 -----
+/*
+int count = 1;
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= row; j++) {
+            if((j & 1) == 0) {
+                cout << i << " ";
+            }
+            else {
+                cout << count << " ";
+                count++;
+            }
+        }
+        cout << endl;
+        count = 1;
+    }
+*/
+
+// ----- Pattern 11 -----
+/*
+    int count = 1;
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= row; j++) {
+            if((j & 1) == 1) {
+                cout << i << " ";
+            }
+            else {
+                cout << count << " ";
+                count++;
+            }
+        }
+        cout << endl;
+        count = 1;
+    }
+*/
+
 
     return 0;
 }
