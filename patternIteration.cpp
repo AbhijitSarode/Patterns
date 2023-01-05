@@ -76,5 +76,41 @@ int main() {
     }
 */
 
+// ----- Pattern 7 -----
+/*
+    int count = 1;
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < row; j++) {
+            cout << count << " ";
+            count = count + 2;
+        }
+        cout << endl;
+    }
+*/
+
+// ----- Pattern 8 -----
+/*
+    int count = 2;
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < row; j++) {
+            cout << count << " ";
+            count = count + 2;
+        }
+        cout << endl;
+    }
+*/
+
+// ----- Pattern 9 -----
+/*
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= row; j++) {
+            cout << i * j << " ";
+        }
+        cout << endl;
+    }
+*/
+
+
     return 0;
 }
+
