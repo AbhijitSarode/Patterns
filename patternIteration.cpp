@@ -146,6 +146,25 @@ int count = 1;
     }
 */
 
+// ----- Pattern 12 -----
+/*
+for(int i = 1; i <= row; i++) {
+    int count = i;
+    for(int j = 0; j < row; j++) {
+        cout << count << " ";
+        count = count + row;
+    }
+    cout << endl;
+}
+*/
+
+// ----- Pattern 13 -----
+/*
+*/
+for(int i = 1; i <= row; i++) {
+    for(int j = 1; j <= row; j++) {
+        
+    }
 
     return 0;
 }
